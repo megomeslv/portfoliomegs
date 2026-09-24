@@ -1,0 +1,11 @@
+{
+  "title": "MEGS",
+  "description": "Showcases a professional portfolio to highlight skills and projects, helping users present their work effectively to potential employers or clients.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
