@@ -1,6 +1,5 @@
 export const images = {
   home: [
-    '/images/home/maria-eduarda-gomes1.webp',
     '/images/home/maria-eduarda-gomes2.webp',
   ],
   amara: [

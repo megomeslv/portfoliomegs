@@ -315,14 +315,14 @@ body {
 .mg-project-featured {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  gap: 3vw;
-  align-items: end;
-  padding-bottom: 3rem;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1.15fr);
+  gap: clamp(2.5rem, 3vw, 3.5rem);
+  align-items: center;
+  padding-bottom: 2.25rem;
   border-bottom: 1px solid rgba(250, 248, 242, .18);
 }
 .mg-project-featured .mg-project-content {
-  padding-bottom: .25rem;
+  padding-bottom: 0;
 }
 .mg-project-card {
   grid-column: span 4;
@@ -336,7 +336,10 @@ body {
 }
 
 .mg-project figure { aspect-ratio: 4 / 5; }
-.mg-project-featured figure { aspect-ratio: 4 / 3; }
+.mg-project-featured figure {
+  aspect-ratio: 16 / 10;
+  margin-bottom: 0;
+}
 
 .mg-project-slideshow {
   isolation: isolate;
@@ -388,9 +391,9 @@ body {
 }
 
 .mg-project-label {
-  margin: 0 0 .8rem;
+  margin: 0 0 .75rem;
   color: rgba(250, 248, 242, .45);
-  font-size: .68rem;
+  font-size: .72rem;
   letter-spacing: .08em;
   text-transform: uppercase;
 }
@@ -406,13 +409,15 @@ body {
 
 .mg-project-description {
   max-width: 34ch;
-  margin: 1.1rem 0 0;
+  margin: 1rem 0 0;
   color: rgba(250, 248, 242, .56);
   font-size: .91rem;
   line-height: 1.55;
 }
 
 .mg-project-featured .mg-project-description {
+  max-width: 38ch;
+  margin-top: 1rem;
   font-size: clamp(1.15rem, 1.5vw, 1.45rem);
 }
 
@@ -431,6 +436,10 @@ body {
   font-weight: 700;
   letter-spacing: .1em;
   text-transform: uppercase;
+}
+
+.mg-project-featured .mg-project-link {
+  margin-top: 1.5rem;
 }
 
 .mg-about {
@@ -681,10 +690,19 @@ body {
   .mg-section-head > p { max-width: 33ch; }
   .mg-project-grid { display: flex; flex-direction: column; gap: 5rem; }
   .mg-project { width: 100%; margin: 0; }
-  .mg-project-featured { display: block; }
+  .mg-project-featured {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
   .mg-project-featured .mg-project-content { padding-bottom: 0; }
-  .mg-project figure,
-  .mg-project-featured figure { aspect-ratio: 4 / 3; }
+  .mg-project-featured figure {
+    aspect-ratio: 16 / 10;
+    margin-bottom: 0;
+  }
+  .mg-project-featured .mg-project-description {
+    max-width: none;
+  }
 
   .mg-about { grid-template-columns: 1fr; }
   .mg-about-photo { min-height: 120vw; }
