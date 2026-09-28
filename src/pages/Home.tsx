@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { images } from '../data/images'
 import ProjectSlideshow from '../components/ProjectSlideshow'
 
 const resumeHref = '/documents/Maria-Eduarda-Gomes-Curriculo-2026.pdf'
@@ -13,7 +12,7 @@ const projects = [
     period: '2025—2026',
     description: 'Mostra de moda afro-soteropolitana criada para ocupar espaços e conectar públicos.',
     to: '/projetos/aroko',
-    images: ['/images/bannerevento.webp', '/images/banneraroko.webp', '/images/arokoreal%20(1).webp', '/images/arokoreal%20(2).webp', '/images/cartazaroko.webp'],
+    images: ['/images/banneraroko.webp', '/images/arokoreal%20(1).webp', '/images/arokoreal%20(2).webp', '/images/cartazaroko.webp'],
     className: 'mg-project-featured',
   },
   {
@@ -23,7 +22,7 @@ const projects = [
     period: '2025—atual',
     description: 'Conteúdo sobre energia traduzido para o dia a dia.',
     to: '/projetos/amara-nzero',
-    images: ['/images/plataforma.webp', '/images/bess.webp', '/images/linkedinbess.webp'],
+    images: ['/images/bannerevento.webp', '/images/plataforma.webp', '/images/bess.webp', '/images/linkedinbess.webp'],
     className: 'mg-project-card',
   },
   {
@@ -80,6 +79,47 @@ export default function Home() {
           </figure>
           <p className="mg-portrait-caption">Ideias com contexto.<br />Projetos com presença.</p>
           <span className="mg-available">Disponível para novos projetos</span>
+        </div>
+      </section>
+
+      <section className="mg-skills" id="habilidades" aria-labelledby="skills-title">
+        <header className="mg-skills-heading">
+          <h2 id="skills-title">Habilidades<br />e <em>ferramentas</em></h2>
+          <p>Do planejamento à execução: conteúdo, design e produção com leitura de resultados.</p>
+        </header>
+
+        <div className="mg-skills-content">
+          <div className="mg-skills-grid">
+            <div className="mg-skill-group">
+              <h3>Conteúdo e redes sociais</h3>
+              <p>Gestão de redes sociais, criação de conteúdo digital e planejamento editorial.</p>
+            </div>
+            <div className="mg-skill-group">
+              <h3>Design e audiovisual</h3>
+              <p>Design gráfico, identidade visual, captação e edição de vídeos.</p>
+            </div>
+            <div className="mg-skill-group">
+              <h3>Estratégia e performance</h3>
+              <p>Análise de dados e performance, SEO, comunicação interna e endomarketing.</p>
+            </div>
+            <div className="mg-skill-group">
+              <h3>Eventos e cultura</h3>
+              <p>Organização de eventos, produção cultural, captação de recursos e gestão orçamentária.</p>
+            </div>
+          </div>
+
+          <div className="mg-tools" aria-labelledby="tools-title">
+            <h3 id="tools-title">Ferramentas que uso</h3>
+            <ul className="mg-tools-list">
+              <li>Canva</li>
+              <li>Figma</li>
+              <li>Pacote Adobe</li>
+              <li>CapCut</li>
+              <li>iMovie</li>
+              <li>Microsoft Clarity</li>
+              <li>Pacote Office</li>
+            </ul>
+          </div>
         </div>
       </section>
 

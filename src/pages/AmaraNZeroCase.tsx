@@ -8,7 +8,7 @@ import MetricGrid from '../components/MetricGrid'
 import MetricItem from '../components/MetricItem'
 import { images } from '../data/images'
 
-const amaraLandscapeIndexes = new Set([0, 1])
+const amaraLandscapeIndexes = new Set([0, 1, 5])
 const amaraGallery = images.amara.map((src, index) => ({
   src,
   alt: `Peça de comunicação da Amara NZero ${index + 1}`,

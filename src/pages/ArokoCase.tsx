@@ -8,7 +8,7 @@ import MetricGrid from '../components/MetricGrid'
 import MetricItem from '../components/MetricItem'
 import { images } from '../data/images'
 
-const landscapeIndexes = new Set([0, 1, 2, 3, 4, 5, 6, 7])
+const landscapeIndexes = new Set([0, 1, 2, 3, 4, 5, 6])
 
 const arokoGallery = images.aroko.map((src, index) => ({
   src,
