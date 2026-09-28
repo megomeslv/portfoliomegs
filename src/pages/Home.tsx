@@ -13,7 +13,7 @@ const projects = [
     period: '2025—2026',
     description: 'Mostra de moda afro-soteropolitana criada para ocupar espaços e conectar públicos.',
     to: '/projetos/aroko',
-    images: ['/images/banneraroko.webp', '/images/arokoreal%20(1).webp', '/images/arokoreal%20(2).webp', '/images/cartazaroko.webp'],
+    images: ['/images/bannerevento.webp', '/images/banneraroko.webp', '/images/arokoreal%20(1).webp', '/images/arokoreal%20(2).webp', '/images/cartazaroko.webp'],
     className: 'mg-project-featured',
   },
   {
@@ -76,7 +76,7 @@ export default function Home() {
 
         <div className="mg-portrait-wrap">
           <figure className="mg-portrait">
-            <img src="/images/projects/aroko/aroko%20(10).webp" alt="Retrato de Maria Eduarda Gomes" />
+            <img src="/images/arokorealeu%20(1).webp" alt="Retrato de Maria Eduarda Gomes" />
           </figure>
           <p className="mg-portrait-caption">Ideias com contexto.<br />Projetos com presença.</p>
           <span className="mg-available">Disponível para novos projetos</span>
