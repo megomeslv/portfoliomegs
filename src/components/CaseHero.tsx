@@ -11,9 +11,10 @@ type CaseHeroProps = {
   image: string
   imageAlt: string
   imagePosition?: string
+  imageFit?: 'cover' | 'contain'
 }
 
-export default function CaseHero({ title, category, meta, image, imageAlt, imagePosition = 'center' }: CaseHeroProps) {
+export default function CaseHero({ title, category, meta, image, imageAlt, imagePosition = 'center', imageFit = 'cover' }: CaseHeroProps) {
   const textRef = useReveal()
 
   return (
@@ -24,7 +25,7 @@ export default function CaseHero({ title, category, meta, image, imageAlt, image
         <CaseMeta items={meta} />
       </div>
       <figure className="case-hero-image">
-        <img src={image} alt={imageAlt} style={{ objectPosition: imagePosition }} />
+        <img src={image} alt={imageAlt} style={{ objectPosition: imagePosition, objectFit: imageFit }} />
       </figure>
     </header>
   )

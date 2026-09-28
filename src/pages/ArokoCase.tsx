@@ -8,20 +8,19 @@ import MetricGrid from '../components/MetricGrid'
 import MetricItem from '../components/MetricItem'
 import { images } from '../data/images'
 
-const portraitIndexes = new Set([1, 2, 4, 5, 6, 7, 10, 12, 13, 15])
+const landscapeIndexes = new Set([0, 1, 2, 3, 4, 5, 6, 7])
 
 const arokoGallery = images.aroko.map((src, index) => ({
   src,
   alt: `Registro do ÀROKÒ 2026 ${index + 1}`,
   label: index === 0 ? 'Primeira edição / ÀROKÒ 2026' : undefined,
-  ratio: portraitIndexes.has(index) ? 'portrait' as const : 'detail' as const,
-  align: portraitIndexes.has(index) ? 'top' as const : 'center' as const,
+  ratio: landscapeIndexes.has(index) ? 'wide' as const : 'portrait' as const,
 }))
 
 export default function ArokoCase() {
   return (
     <article className="case-page">
-      <CaseHero number="02" title="ÀROKÒ" category="PRODUÇÃO CULTURAL / RELAÇÕES PÚBLICAS / COMUNICAÇÃO / DESIGN" meta={[{ label: 'FUNÇÕES', value: 'IDEALIZADORA / PRODUTORA / SOCIAL MEDIA / DESIGNER GRÁFICA' }, { label: 'LOCAL', value: 'ESPAÇO CULTURAL DA BARROQUINHA\nSALVADOR / BAHIA' }, { label: 'PERÍODO', value: '2025 — 2026' }]} image={images.aroko[13]} imageAlt="Registro da primeira edição do ÀROKÒ" imagePosition="center 30%" />
+      <CaseHero number="02" title="ÀROKÒ" category="PRODUÇÃO CULTURAL / RELAÇÕES PÚBLICAS / COMUNICAÇÃO / DESIGN" meta={[{ label: 'FUNÇÕES', value: 'IDEALIZADORA / PRODUTORA / SOCIAL MEDIA / DESIGNER GRÁFICA' }, { label: 'LOCAL', value: 'ESPAÇO CULTURAL DA BARROQUINHA\nSALVADOR / BAHIA' }, { label: 'PERÍODO', value: '2025 — 2026' }]} image={images.aroko[0]} imageAlt="Registro da primeira edição do ÀROKÒ" imagePosition="center 30%" />
       <CaseIntro context="Mostra de Moda Afro-Soteropolitana concebida como Trabalho de Conclusão de Curso em Relações Públicas na UNEB, unindo pesquisa, moda autoral e experiência cultural." responsibilities={['Idealização e produção geral', 'Gestão orçamentária, cronograma e captação', 'Relacionamento com parceiros, fornecedores e imprensa', 'Identidade visual e estratégia de comunicação', 'Social media e campanha de financiamento coletivo']} />
       <CaseSection label="PRIMEIRA EDIÇÃO · 20/08/2026" title="Uma vitrine de descoberta" intro="A mostra ocupou o Espaço Cultural da Barroquinha com moda autoral, circulação de público e novos vínculos entre marcas e audiência.">
         <MetricGrid className="metric-grid-featured">

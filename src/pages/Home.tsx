@@ -13,7 +13,7 @@ const projects = [
     period: '2025—2026',
     description: 'Mostra de moda afro-soteropolitana criada para ocupar espaços e conectar públicos.',
     to: '/projetos/aroko',
-    images: [images.aroko[8], images.aroko[3], images.aroko[12], images.aroko[7]],
+    images: ['/images/banneraroko.webp', '/images/arokoreal%20(1).webp', '/images/arokoreal%20(2).webp', '/images/cartazaroko.webp'],
     className: 'mg-project-featured',
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     period: '2025—atual',
     description: 'Conteúdo sobre energia traduzido para o dia a dia.',
     to: '/projetos/amara-nzero',
-    images: [images.amara[2], images.amara[1], images.amara[6]],
+    images: ['/images/plataforma.webp', '/images/bess.webp', '/images/linkedinbess.webp'],
     className: 'mg-project-card',
   },
   {
@@ -33,7 +33,7 @@ const projects = [
     period: '2025—2026',
     description: 'Cinema nacional na universidade, com identidade própria.',
     to: '/projetos/cinecampus',
-    images: [images.cinecampus[10], images.cinecampus[13]],
+    images: ['/images/cinereal%20(1).webp', '/images/cinereal%20(2).webp', '/images/cinereal%20(3).webp', '/images/cinereal%20(4).webp'],
     className: 'mg-project-card',
   },
   {
@@ -43,7 +43,7 @@ const projects = [
     period: '2024—2025',
     description: 'Campanhas internas de cultura organizacional.',
     to: '/projetos/camara-municipal',
-    images: [images.camara[11], images.camara[4]],
+    images: ['/images/cmsreal%20(1).webp', '/images/cmsreal%20(2).webp', '/images/cmsreal%20(3).webp'],
     className: 'mg-project-card',
   },
 ] as const
