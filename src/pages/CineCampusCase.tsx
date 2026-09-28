@@ -20,7 +20,7 @@ const cineCampusGallery = images.cinecampus.map((src, index) => ({
 export default function CineCampusCase() {
   return (
     <article className="case-page">
-      <CaseHero number="04" title="CINECAMPUS UNEB" category="PRODUÇÃO CULTURAL / EVENTOS / SOCIAL MEDIA / DESIGN" meta={[{ label: 'FUNÇÕES', value: 'IDEALIZADORA / PRODUTORA / SOCIAL MEDIA / DESIGNER GRÁFICA' }, { label: 'PERÍODO', value: '2025—2026' }]} image={images.cinecampus[0]} imageAlt="Registro do CineCampus UNEB" />
+      <CaseHero number="04" title="CINECAMPUS UNEB" category="PRODUÇÃO CULTURAL / EVENTOS / SOCIAL MEDIA / DESIGN" meta={[{ label: 'FUNÇÕES', value: 'IDEALIZADORA / PRODUTORA / SOCIAL MEDIA / DESIGNER GRÁFICA' }, { label: 'PERÍODO', value: '2025—2026' }]} image="/images/cinereal%20(8).webp" imageAlt="Registro do CineCampus UNEB" />
       <CaseIntro context="Projeto cultural desenvolvido na disciplina de Eventos da graduação em Relações Públicas da UNEB, com sessões gratuitas de cinema nacional no Teatro UNEB." responsibilities={['Idealização e produção do projeto', 'Planejamento orçamentário e programação', 'Execução das sessões', 'Estratégia de divulgação', 'Identidade visual e peças digitais']} />
       <CaseSection label="ALCANCE E PÚBLICO" title="Cinema nacional em Salvador" intro="Uma sessão no Teatro UNEB conectou a programação do CineCampus a um público local e presencial.">
         <MetricGrid className="metric-grid-featured">
