@@ -109,7 +109,7 @@ export default function Home() {
 
       <section className="mg-about" id="sobre">
         <div className="mg-about-photo">
-          <img src={images.home[1]} alt="Maria Eduarda Gomes em um ambiente externo" loading="lazy" />
+          <img src="/images/home/maria-eduarda-gomes2.webp" alt="Maria Eduarda Gomes em um ambiente externo" loading="lazy" />
           <span aria-hidden="true">MEG<br />—26</span>
         </div>
 
