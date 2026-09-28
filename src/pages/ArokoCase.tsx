@@ -20,7 +20,7 @@ const arokoGallery = images.aroko.map((src, index) => ({
 export default function ArokoCase() {
   return (
     <article className="case-page">
-      <CaseHero number="02" title="ÀROKÒ" category="PRODUÇÃO CULTURAL / RELAÇÕES PÚBLICAS / COMUNICAÇÃO / DESIGN" meta={[{ label: 'FUNÇÕES', value: 'IDEALIZADORA / PRODUTORA / SOCIAL MEDIA / DESIGNER GRÁFICA' }, { label: 'LOCAL', value: 'ESPAÇO CULTURAL DA BARROQUINHA\nSALVADOR / BAHIA' }, { label: 'PERÍODO', value: '2025 — 2026' }]} image={images.aroko[0]} imageAlt="Registro da primeira edição do ÀROKÒ" imagePosition="center 30%" />
+      <CaseHero number="02" title="ÀROKÒ" category="PRODUÇÃO CULTURAL / RELAÇÕES PÚBLICAS / COMUNICAÇÃO / DESIGN" meta={[{ label: 'FUNÇÕES', value: 'IDEALIZADORA / PRODUTORA / SOCIAL MEDIA / DESIGNER GRÁFICA' }, { label: 'LOCAL', value: 'ESPAÇO CULTURAL DA BARROQUINHA\nSALVADOR / BAHIA' }, { label: 'PERÍODO', value: '2025 — 2026' }]} image="/images/arokoreal%20(11).webp" imageAlt="Registro da primeira edição do ÀROKÒ" imagePosition="center 30%" />
       <CaseIntro context="Mostra de Moda Afro-Soteropolitana concebida como Trabalho de Conclusão de Curso em Relações Públicas na UNEB, unindo pesquisa, moda autoral e experiência cultural." responsibilities={['Idealização e produção geral', 'Gestão orçamentária, cronograma e captação', 'Relacionamento com parceiros, fornecedores e imprensa', 'Identidade visual e estratégia de comunicação', 'Social media e campanha de financiamento coletivo']} />
       <CaseSection label="PRIMEIRA EDIÇÃO · 20/08/2026" title="Uma vitrine de descoberta" intro="A mostra ocupou o Espaço Cultural da Barroquinha com moda autoral, circulação de público e novos vínculos entre marcas e audiência.">
         <MetricGrid className="metric-grid-featured">

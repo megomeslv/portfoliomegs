@@ -398,3 +398,14 @@
     gap: 2rem;
   }
 }
+
+/* Size each Amara metric to its own column and keep the full value together. */
+.amara-case .case-front-metrics .metric-item {
+  container-type: inline-size;
+}
+
+.amara-case .case-front-metrics .metric-value {
+  font-size: min(2.5rem, 22cqi);
+  white-space: nowrap;
+  overflow-wrap: normal;
+}
