@@ -213,6 +213,15 @@
   line-height: 1.5;
 }
 
+/* Keep the Amara fronts heading on one line at every viewport width. */
+.amara-case .case-fronts-section .section-title {
+  max-width: none;
+  font-size: clamp(.75rem, 3.8vw, 4rem);
+  white-space: nowrap;
+  overflow-wrap: normal;
+  line-height: 1.15;
+}
+
 .case-front-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
