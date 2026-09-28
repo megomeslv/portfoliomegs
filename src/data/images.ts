@@ -8,6 +8,7 @@ export const images = {
     '/images/plataforma.webp',
     '/images/bess.webp',
     '/images/cliente.webp',
+    '/images/bannerevento.webp',
   ],
   aroko: [
     '/images/arokoreal%20(1).webp',
@@ -17,7 +18,6 @@ export const images = {
     '/images/arokoreal%20(8).webp',
     '/images/arokorealeu%20(3).webp',
     '/images/banneraroko.webp',
-    '/images/bannerevento.webp',
     '/images/arokoreal%20(2).webp',
     '/images/arokoreal%20(3).webp',
     '/images/arokoreal%20(4).webp',
