@@ -32,7 +32,7 @@ const youtubeVideos = [
 export default function AmaraNZeroCase() {
   return (
     <article className="case-page amara-case">
-      <CaseHero number="01" title="AMARA NZERO" category="MARKETING DIGITAL / SOCIAL MEDIA / CONTEÚDO / COMUNICAÇÃO" meta={[{ label: 'CLIENTE', value: 'AMARA NZERO' }, { label: 'CARGO', value: 'ESTAGIÁRIA DE MARKETING' }, { label: 'PERÍODO', value: 'FEVEREIRO DE 2025 — ATUAL' }]} image="/images/linkedinbess.webp" imageAlt="Conteúdo da Amara NZero sobre BESS" imageFit="contain" />
+      <CaseHero number="01" title="AMARA NZERO" category="MARKETING DIGITAL / SOCIAL MEDIA / CONTEÚDO / COMUNICAÇÃO" meta={[{ label: 'CARGO', value: 'ESTAGIÁRIA DE MARKETING' }, { label: 'PERÍODO', value: 'FEVEREIRO DE 2025 — ATUAL' }]} image="/images/cliente.webp" imageAlt="Peça de comunicação da Amara NZero para clientes" imageFit="contain" />
       <CaseIntro context="Empresa de transição energética. Minha atuação conecta planejamento editorial, produção de conteúdo, mídia orgânica e leitura de performance." responsibilities={['Planejamento editorial e gestão de redes sociais', 'Roteirização, captação, edição de vídeo e design', 'SEO, AEO e análise de performance orgânica', 'Endomarketing e apoio à comunicação interna', 'Materiais de apoio comercial e eventos']} />
       <CaseSection label="RESULTADOS" title="Crescimento que se mede" intro="Uma atuação que conecta presença, descoberta e visibilidade em novos canais de busca.">
         <MetricGrid className="metric-grid-featured">

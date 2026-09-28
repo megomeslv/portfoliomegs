@@ -213,15 +213,6 @@
   line-height: 1.5;
 }
 
-/* Keep the Amara fronts heading on one line at every viewport width. */
-.amara-case .case-fronts-section .section-title {
-  max-width: none;
-  font-size: clamp(.75rem, 3.8vw, 4rem);
-  white-space: nowrap;
-  overflow-wrap: normal;
-  line-height: 1.15;
-}
-
 .case-front-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -406,4 +397,15 @@
   .case-insight {
     gap: 2rem;
   }
+}
+
+/* Size each Amara metric to its own column and keep the full value together. */
+.amara-case .case-front-metrics .metric-item {
+  container-type: inline-size;
+}
+
+.amara-case .case-front-metrics .metric-value {
+  font-size: min(2.5rem, 22cqi);
+  white-space: nowrap;
+  overflow-wrap: normal;
 }
