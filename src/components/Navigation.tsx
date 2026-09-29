@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
-const resumeHref = '/documents/Maria-Eduarda-Gomes-Curriculo-2026.pdf'
+import { resumeHref, resumeDownloadName } from '../data/resume'
 const whatsappHref = 'https://api.whatsapp.com/send/?phone=5571992160080&text&type=phone_number&app_absent=0'
 
 export default function Navigation() {
@@ -26,7 +26,7 @@ export default function Navigation() {
         <nav className="mg-desktop-nav" aria-label="Navegação principal">
           <Link to="/#projetos">Projetos</Link>
           <Link to="/#sobre">Sobre</Link>
-          <a href={resumeHref} download="Maria Eduarda Gomes - Curriculo 2026.pdf">Currículo</a>
+          <a href={resumeHref} download={resumeDownloadName}>Currículo</a>
         </nav>
 
         <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="mg-contact-link">

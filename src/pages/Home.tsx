@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import ProjectSlideshow from '../components/ProjectSlideshow'
 
-const resumeHref = '/documents/Maria-Eduarda-Gomes-Curriculo-2026.pdf'
+import { resumeHref, resumeDownloadName } from '../data/resume'
 const whatsappHref = 'https://api.whatsapp.com/send/?phone=5571992160080&text&type=phone_number&app_absent=0'
 
 const projects = [
@@ -166,7 +166,7 @@ export default function Home() {
             perder clareza.
           </p>
           <div className="mg-about-actions">
-            <a href={resumeHref} download="Maria Eduarda Gomes - Curriculo 2026.pdf">Baixar currículo <span>↓</span></a>
+            <a href={resumeHref} download={resumeDownloadName}>Baixar currículo <span>↓</span></a>
             <a href={whatsappHref} target="_blank" rel="noopener noreferrer">Vamos conversar <span>↗</span></a>
           </div>
         </div>
