@@ -1,8 +1,9 @@
 {
-  "title": "MEGS",
-  "description": "Portfolio de Maria Eduarda Gomes, estudante de Relações Públicas, especialista em marketing digital, comunicação estratégica e produção cultural.",
+  "title": "Maria Eduarda Gomes | Relações Públicas, Marketing Digital e Produção Cultural",
+  "description": "Portfólio de Maria Eduarda Gomes, estudante concluinte de Relações Públicas na UNEB, em Salvador, Bahia. Experiência em marketing digital, social media, produção audiovisual, comunicação estratégica, eventos e produção cultural.",
+  "language": "pt-BR",
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
     "addBypassLinks": false,
