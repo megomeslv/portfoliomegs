@@ -1,13 +1,27 @@
 User-agent: *
 Allow: /
 
+# Search visibility in ChatGPT
 User-agent: OAI-SearchBot
 Allow: /
 
+# Pages fetched in response to a user action in ChatGPT
 User-agent: ChatGPT-User
 Allow: /
 
+# Keep training crawler access disabled
 User-agent: GPTBot
+Disallow: /
+
+# Search visibility in Claude
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Keep training crawler access disabled
+User-agent: ClaudeBot
 Disallow: /
 
 Sitemap: https://megsportfolio.vercel.app/sitemap.xml
